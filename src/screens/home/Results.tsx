@@ -74,7 +74,7 @@ export const Results = () => {
                         )
                     }
                 >
-                    <div className="flex flex-col gap-6 lg:flex-row lg:gap-4 z-10">
+                    <div className="flex flex-col gap-y-10 gap-x-6 lg:flex-row lg:gap-4 z-10">
                         <div className="flex-1">
                             <Input
                                 placeholder="Shorten a link here..."

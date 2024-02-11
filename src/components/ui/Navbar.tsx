@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Button } from './Button'
 import { useUIStore } from '@/hooks/useUIStore'
+import { getBasePath } from '@/utils'
 
 const links = ['Feature', 'Pricing', 'Resources']
 
@@ -16,7 +17,7 @@ export const Navbar = () => {
         <nav>
             <Container component="header" className="py-8 lg:py-12 flex items-center font-semibold text-grayishViolet">
                 <div className="relative w-[131px] h-10 mr-10">
-                    <Image priority fill src="/logo-dark.svg" alt="Logo Url Shorting API" className="object-scale-down" />
+                    <Image priority fill src={ getBasePath('logo-dark.svg') } alt="Logo Url Shorting API" className="object-scale-down" />
                 </div>
                 {/* <Image priority src="/logo.svg" width="131" height="33" alt="Logo Url Shorting API" className="mr-10" /> */}
                 <ul className="list-none hidden md:inline-flex flex-1">

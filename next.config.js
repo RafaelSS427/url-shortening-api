@@ -5,7 +5,7 @@ const nextConfig = {
         unoptimized: true
     },
 
-    basePath: "/url-shortening-api"
+    basePath: process.env.NODE_ENV === "production" ? "/url-shortening-api" : undefined
 }
 
 module.exports = nextConfig

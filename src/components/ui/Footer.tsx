@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Container } from './'
 import { SocialMedia } from './SocialMedia'
 import Link from 'next/link'
+import { getBasePath } from '@/utils'
 
 const CLASSES_LINKS = 'transition-colors text-white/50 text-sm font-light hover:text-cyan/90 max-w-max' 
 
@@ -12,7 +13,7 @@ export const Footer = () => {
                 <div className="col-span-full sm:col-span-6 md:col-span-3 lg:col-span-4">
                 <div className="flex justify-center lg:justify-start">
                     <div className="relative w-[131px] h-10">
-                        <Image priority fill src="/logo-light.svg" alt="Logo Url Shorting API" className="object-scale-down" />
+                        <Image priority fill src={ getBasePath('logo-light.svg') } alt="Logo Url Shorting API" className="object-scale-down" />
                     </div>
                 </div>
                 </div>
